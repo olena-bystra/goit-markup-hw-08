@@ -1,0 +1,37 @@
+.data-button{
+    position: relative;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    align-content: flex-end;;   
+}
+
+.data-button .icon-close{
+    display: none;
+}
+
+.data-button.is-open .icon-close{
+    display: block;
+}
+
+.data-button.is-open .icon-menu{
+    display: none;
+}
+
+.icon-close:hover,
+.icon-menu:hover{
+    fill: $hovercolor;
+}
+
+.icon-close:focus,
+.icon-menu:focus{
+    fill: $hovercolor;
+}
+
+@media screen and (min-width:768px) {
+    .data-button{
+        display: none;
+    }
+}
